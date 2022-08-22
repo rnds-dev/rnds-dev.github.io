@@ -1,0 +1,21 @@
+//mixins
+.font(@fz: 15px) {
+  font-size: @fz;
+  line-height: 1.5;
+  margin: 20px;
+}
+
+//vars
+@background: #0f0f0f; 
+
+
+//code
+.header {
+  .font(); //mixin
+  span { display: block; }
+
+  &:hover {
+    background-color: @background;
+  }
+}
+
